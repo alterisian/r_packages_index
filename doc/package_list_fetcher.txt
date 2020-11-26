@@ -1,0 +1,31 @@
+Package List Fetcher:
+
+Reference: 
+ * cran_root_directory: https://cran.r-project.org/src/contrib
+ * cran_packages_file: /PACKAGAGES
+ * example packages file url: 
+https://cran.r-project.org/src/contrib/PACKAGES
+An example is in the doc directory, as PACKAGES
+ * local_tmp_directory = /tmp 
+
+- use gem down to provide robust file downloading using ruby.
+- open primary CRAN Server url
+- read contents
+
+Option 1
+- open local file (package_list.txt)
+- save content
+- write package_list_file_reader.rb
+- from file contents, 
+
+Option 2
+- write straight to db; Package model.
+disadvantage is that we could loose the package list, or have local db issues.
+this approach feels too brittle. 
+
+Lets pick option 1)
+
+We can save packages locally in package_list.txt
+I was thinking that pack_list_<date>.txt could be useful to store historical packages,
+ but this would eventually fill the file system up with un-needed files. 
+ If we need any previous pack_list's let us just have a .old file.

@@ -1,0 +1,9 @@
+Package:
+
+name
+version
+date/publication
+title
+description
+authors
+maintainers
