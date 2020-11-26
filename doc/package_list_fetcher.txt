@@ -2,7 +2,7 @@ Package List Fetcher:
 
 Reference: 
  * cran_root_directory: https://cran.r-project.org/src/contrib
- * cran_packages_file: /PACKAGAGES
+ * cran_packages_file: /PACKAGES
  * example packages file url: 
 https://cran.r-project.org/src/contrib/PACKAGES
 An example is in the doc directory, as PACKAGES
